@@ -30,7 +30,7 @@
 ### System Requirement
 - Win 10
 
-- Latest Firefox/Chrome
+- Latest Firefox/Chrome supporting HTML5
 
 ### How to Run
 1. Run 'python server.py' in cmd.
