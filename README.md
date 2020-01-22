@@ -1,5 +1,6 @@
-## Crawler-StackOverflow
+# Crawler-StackOverflow
 -Extracted from stackoverflow.com the 10 newest Android-related questions and the 10 most voted Android-related questions that are created in the past week.
+
 -Writtern in Python 3.7
 
 #### Features
@@ -19,7 +20,9 @@
 
 #### Prerequisites
 pip install requests
+
 pip install beautifulsoup4
+
 pip install dorminate
 
 #### How to Run
