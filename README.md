@@ -29,5 +29,5 @@
 ### How to Run
 1. Run 'python server.py' in cmd.
 2. Open 'http://127.0.0.1:5000/' in web browser. (Tested by Firefox and Chrome)
-3. Waite for a few seconds until 'Finish!' is printed in terminal.
+3. Waite for a few seconds until 'Finished!' is printed in terminal.
 4. One can update the data by clicking on the button 'Update'.
