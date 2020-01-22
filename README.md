@@ -35,7 +35,7 @@
 ### How to Run
 1. Run 'python server.py' in cmd.
 
-2. Open 'http://127.0.0.1:5000/' in web browser. (Tested by Firefox and Chrome)
+2. Open 'http://127.0.0.1:5000/' in web browser. 
 
 3. Waite for a few seconds until 'Finished!' is printed in terminal.
 
