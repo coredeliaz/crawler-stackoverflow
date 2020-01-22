@@ -11,10 +11,10 @@
 5.Displayed key attributes of every question under its title, such as answer number, vote number and creat time.<new>
 6.Saved the 10 newest and 10 most voted questions in csv files respectively.<new>
 
-#Prerequisites
+# Prerequisites
 pip install requests
 pip install beautifulsoup4
 pip install dorminate
 
-#How to Run
+# How to Run
 1.python main.py
