@@ -9,13 +9,13 @@
 
 3. Displayed the titles of the extracted questions on a website.
 
-4. Updated the web content when clicking the update button and showed the update time.<new>
+4. Updated the web content when clicking the update button and showed the update time.(NEW)
   
 4. Displayed the full text of question in a drop-down box when clicking on the question title.
 
-5. Displayed key attributes of every question under its title, such as answer number, vote number and creat time.<new>
+5. Displayed key attributes of every question under its title, such as answer number, vote number and creat time.(NEW)
   
-6. Saved the 10 newest and 10 most voted questions in csv files respectively.<new>
+6. Saved the 10 newest and 10 most voted questions in csv files respectively.(NEW)
 
 ### Prerequisites
 - pip install requests
