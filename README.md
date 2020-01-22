@@ -16,7 +16,7 @@
 
 5. Displayed key attributes of every question under its title, such as answer number, vote number and creat time.(NEW)
   
-6. Saved the 10 newest and 10 most voted questions in csv files respectively.(NEW)
+6. Saved the 10 newest and 10 most voted questions in csv files respectively, and automatically named files with update time.(NEW)
 
 ### Prerequisites
 - pip install requests
