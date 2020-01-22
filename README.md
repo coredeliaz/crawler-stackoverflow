@@ -1,6 +1,5 @@
 # Crawler-StackOverflow
 - Extracted from stackoverflow.com the 10 newest Android-related questions and the 10 most voted Android-related questions that are created in the past week.
-
 - Writtern in Python 3.7
 
 ### Features
@@ -28,4 +27,7 @@
 - pip install flask
 
 ### How to Run
-1.python main.py
+1.Run 'python server.py' in cmd.
+2.Open 'http://127.0.0.1:5000/' in web browser. (Tested by Firefox and Chrome)
+3.Waite for a few seconds until 'Finish!' is printed in terminal.
+4.One can update the data by clicking on the button 'Update'.
