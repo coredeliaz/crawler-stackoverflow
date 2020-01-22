@@ -33,10 +33,16 @@
 - Latest Firefox/Chrome supporting HTML5
 
 ### How to Run
-1. Run 'python server.py' in cmd.
+1. Download the repository.
 
-2. Open 'http://127.0.0.1:5000/' in web browser. 
+2. Change the directory to where you downloaded the crawler.
 
-3. Waite for a few seconds until 'Finished!' is printed in terminal.
+3. Run 'python server.py' in cmd.
 
-4. One can update the data by clicking on the button 'Update'.
+4. Open 'http://127.0.0.1:5000/' in web browser. 
+
+5. Waite for a few seconds until 'Finished!' is printed in terminal.
+
+6. Update the data by clicking on the button 'Update'.
+
+7. The csv files have been saved automatically in the root dictionary of the crawler.
