@@ -1,7 +1,7 @@
 # Crawler-StackOverflow
--Extracted from stackoverflow.com the 10 newest Android-related questions and the 10 most voted Android-related questions that are created in the past week.
+- Extracted from stackoverflow.com the 10 newest Android-related questions and the 10 most voted Android-related questions that are created in the past week.
 
--Writtern in Python 3.7
+- Writtern in Python 3.7
 
 ### Features
 1.Extracted the 10 newest Android-related questions without duplicated ones.
@@ -19,11 +19,11 @@
 6.Saved the 10 newest and 10 most voted questions in csv files respectively.<new>
 
 ### Prerequisites
-pip install requests
+- pip install requests
 
-pip install beautifulsoup4
+- pip install beautifulsoup4
 
-pip install dorminate
+- pip install dorminate
 
 ### How to Run
 1.python main.py
