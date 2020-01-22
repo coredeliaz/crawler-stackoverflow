@@ -25,5 +25,7 @@
 
 - pip install dorminate
 
+- pip install flask
+
 ### How to Run
 1.python main.py
