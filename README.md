@@ -3,7 +3,7 @@
 
 -Writtern in Python 3.7
 
-#### Features
+### Features
 1.Extracted the 10 newest Android-related questions without duplicated ones.
 
 2.Extracted the 10 most voted Android-related questions posted in the last 7 days without duplicated ones.
@@ -18,12 +18,12 @@
   
 6.Saved the 10 newest and 10 most voted questions in csv files respectively.<new>
 
-#### Prerequisites
+### Prerequisites
 pip install requests
 
 pip install beautifulsoup4
 
 pip install dorminate
 
-#### How to Run
+### How to Run
 1.python main.py
