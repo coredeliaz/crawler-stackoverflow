@@ -1,0 +1,1616 @@
+<html>
+  <head>
+    <link href="./mycss.css" rel="stylesheet">
+    <base target="_blank">
+    <script src="./myjs.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="loading" style="display:none;font-size:20;">Loading...
+      <img height="30" src="loading.gif" width="30">
+    </div>
+    <div id="content">
+      <button onclick="showLoading();javascript:location.reload();">Update</button>
+      <div href="/update" style="float: left">Last Updated Time: 2020-01-22 22:33</div>
+      <div style="float: right">
+        <i>A Crawler From Stack Overflow By Chi Zhang</i>
+      </div><br/>
+      <h1>The 10 newest Android-related questions in Stack Overflow.</h1>
+      <details>
+        <summary>1.  Android Studio first letter input in EditText is not fully visible when using a custom Font        
+          <a href="https://stackoverflow.com/questions/59861880/android-studio-first-letter-input-in-edittext-is-not-fully-visible-when-using-a?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; android-layout; </a>
+            <a>Asked Time: 5 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I can't seem to make my first letters show correctly when using a custom font with EditText in Android Studio</p>
+<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"&gt;
+
+
+    &lt;EditText
+        android:id="@+id/editText"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/telly_humble"
+        android:textSize="35dp"
+        android:text="jay" /&gt;
+
+&lt;/RelativeLayout&gt;
+</code></pre>
+<p><a href="https://i.stack.imgur.com/u8r5w.png" rel="nofollow noreferrer">example</a></p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>2.  Android PDF Annotation and Edit (Xodo like-app)        
+          <a href="https://stackoverflow.com/questions/59861807/android-pdf-annotation-and-edit-xodo-like-app?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; android-studio; pdf; androidpdfviewer; </a>
+            <a>Asked Time: 10 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I want to be able to edit a pdf in-app like Xodo app does. So I would have a marker for annotations, could add text and notes. Do you have any library that could help the process? The library needs to be free. </p>
+<p><a href="https://i.stack.imgur.com/rF8yB.jpg" rel="nofollow noreferrer"><img alt="Toolbar" src="https://i.stack.imgur.com/rF8yB.jpg"/></a>
+<a href="https://i.stack.imgur.com/eG5e4.jpg" rel="nofollow noreferrer"><img alt="Edited Pdf" src="https://i.stack.imgur.com/eG5e4.jpg"/></a></p>
+<p><strong>Thanks</strong> </p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>3.  Create Boomerand Video (from video) - OR - play a video backwards [android]        
+          <a href="https://stackoverflow.com/questions/59861792/create-boomerand-video-from-video-or-play-a-video-backwards-android?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; video; video-capture; </a>
+            <a>Asked Time: 10 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>Ok, so my android-app captures a video and saves it (which is - I assume - in .mp4?). Pretty straight-forward. 
+Now I want to create a "boomerang video" from it: The video is supposed to first play forward, then backwards. Like Tinder or Instagram make their videos.</p>
+<p>If someone tells me how to play a video backwards, or how to create a video that is the backwards version of the original video, then the rest should be simple.</p>
+<p>Any ideas?</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>4.  How to Show Multiple data from SQLite database inside ListView in android        
+          <a href="https://stackoverflow.com/questions/59861789/how-to-show-multiple-data-from-sqlite-database-inside-listview-in-android?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: java; android; android-studio; android-listview; </a>
+            <a>Asked Time: 10 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>As a newcomer to android development I've been stuck on this issue for a hours now and it's getting pretty tiring.</p>
+<p>After looking at every tutorial and reading every question and answer I could find, still I can't figure out how to get Android Studio to just take what's in my SQLite database and paste its contents into a listview. I thought there would be a easy way after Log the output but can able to display everything there is in a database in a ListView but it appears to be much more in a different way of doing it help needed thanks.</p>
+<p>'''</p>
+<pre><code>public class MainActivity extends AppCompatActivity {
+
+EditText nameEditText;
+EditText phoneEditText;
+ListView updateListView;
+
+SQLiteDatabase sqLiteDatabase;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    nameEditText = findViewById(R.id.nameEditText);
+    phoneEditText = findViewById(R.id.phoneEditText);
+    updateListView = findViewById(R.id.updatedListView);
+
+
+
+    sqLiteDatabase = this.openOrCreateDatabase("Contact", MODE_PRIVATE, null);
+
+    sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS users(name VARCHAR, phone INT(11),id INTEGER PRIMARY KEY)");
+
+
+}
+
+
+public void OnClick(View view) {
+
+
+    if (nameEditText.equals("") || phoneEditText.equals("")) {
+        Toast.makeText(this, "Fields shouldn't be empty", Toast.LENGTH_SHORT).show();
+    } else {
+
+        sqLiteDatabase.execSQL("INSERT INTO users(name, phone) VALUES('" + nameEditText.getText().toString() + "','" + phoneEditText.getText().toString() + "')");
+
+        Cursor c = sqLiteDatabase.rawQuery("SELECT * FROM users", null);
+        int nameIndex = c.getColumnIndex("name");
+        int phoneIndex = c.getColumnIndex("phone");
+        int idIndex = c.getColumnIndex("id");
+        if (c != null &amp;&amp; c.getCount() &gt; 0) {
+            c.moveToFirst();
+            for (int i = 0; i &lt; c.getCount(); i++) {
+                String str = c.getString(0);
+
+                String UpdatedList = (c.getString(nameIndex));
+                String phonelist = (c.getString(phoneIndex));
+
+                String list = (UpdatedList+phonelist);
+                ArrayList&lt;String&gt; arrayList = new ArrayList&lt;String&gt;(Integer.parseInt(list));
+                ArrayAdapter&lt;String&gt; arrayAdapter = new ArrayAdapter&lt;String&gt;(MainActivity.this,android.R.layout.simple_list_item_1,arrayList);
+                updateListView.setAdapter(arrayAdapter);              
+
+
+                Log.i("User Name", c.getString(nameIndex));
+                Log.i("userResults - age", Integer.toString(c.getInt(phoneIndex)));
+                Log.i("userResults - id", Integer.toString(c.getInt(idIndex)));
+                c.moveToNext();
+            }
+
+
+
+
+        }
+    }
+}
+}
+</code></pre>
+<p>'''</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>5.  How to get response from android installer (whether the apk is installed successfully or not)?        
+          <a href="https://stackoverflow.com/questions/59861779/how-to-get-response-from-android-installer-whether-the-apk-is-installed-success?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; apk; installer; onactivityresult; android-install-apk; </a>
+            <a>Asked Time: 11 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I'm developing an android application (act as Controller) that will trigger the android installer to install the apk of my other apps. I had initiated the installation process from my application by the following code.</p>
+<pre><code>Intent intent = new Intent(Intent.ACTION_VIEW);
+            if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.N) {
+                Uri uri = FileProvider.getUriForFile(context, "com.example.android.fileprovider", updated_app_apk_file);
+                intent.setDataAndType(uri,"application/vnd.android.package-archive");
+                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            } else {
+                Uri apkUri = Uri.fromFile(updated_app_apk_file);
+                intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            }
+
+            startActivity(intent);
+</code></pre>
+<p>The above-specified code will open the android installer, This android installer is having two buttons. one is "install" and the other one is a "cancel" button. </p>
+<p>So, I need to know whether the user clicked the "install" button or "cancel" button. How can I get these responses? </p>
+<p>Next, I need to know whether the installation succeeds or not (If the user clicked the "install" button)?</p>
+<p>Thanks in advance.</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>6.  Retrieving values from the database and forwarding        
+          <a href="https://stackoverflow.com/questions/59861772/retrieving-values-from-the-database-and-forwarding?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; database; sqlite; android-studio; kotlin; </a>
+            <a>Asked Time: 11 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>that's my code. I will briefly discuss what I would like to do. Namely, I have ready access to data in sqllite. The record looks nice as at the beginning. A window with the option of editing etc. Now I would like to do something like this in another activity. Extracting data from sqllite 1 column of numerical values and insert them into the text preview so that it calculates the result. As long as you can use the value collar in the text in another activation and something that has been suspended and can not move further.
+If someone knows the basin, could he help me? And I'm still trying, maybe something will go well</p>
+<p>BAZA WYNIKÓW ---&gt; (MAIN ACTIVITY) ---&gt;here I have a database that works correctly</p>
+<pre><code>package com.example.apkadlapacjenta
+
+import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.app.SearchManager
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.text.ClipboardManager
+import android.view.*
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import android.widget.SearchView
+
+import kotlinx.android.synthetic.main.activity_baza_wynikow.toolbar
+import kotlinx.android.synthetic.main.content_baza_wynikow.*
+import kotlinx.android.synthetic.main.row.view.*
+
+@Suppress("DEPRECATION")
+class   BazaWynikow : AppCompatActivity() {
+
+    var listaPomiarow = ArrayList&lt;Note&gt;()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_baza_wynikow)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+        //Wczytujemy baze danych
+        LoadQuery("%")
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        LoadQuery("%")
+    }
+
+    private fun LoadQuery(title: String) {
+        val dbManager = DbMenager(this)
+        val projections = arrayOf("ID", "Stezenie", "Title", "Description")
+        val selectionArgs = arrayOf(title)
+        val cursor =
+            dbManager.Query(projections, "Stezenie like?", selectionArgs   , "Stezenie")
+        listaPomiarow.clear()
+        if (cursor.moveToFirst()) {
+            do {
+                val ID = cursor.getInt(cursor.getColumnIndex("ID"))
+                val Stezenie = cursor.getString(cursor.getColumnIndex("Stezenie"))
+                val Title = cursor.getString(cursor.getColumnIndex("Title"))
+                val Description = cursor.getString(cursor.getColumnIndex("Description"))
+                listaPomiarow.add(Note(ID, Stezenie, Title, Description))
+            } while (cursor.moveToNext())
+        }
+
+
+        //Adapter
+        val mojepomiary = MojePomiaryAdapter(this, listaPomiarow)
+        //ustawienia adaptera
+        notes_pomiarow.adapter = mojepomiary
+
+        // Wszystkie zadania
+        val total = notes_pomiarow.count
+        //actionbar
+        val mActionBar = supportActionBar
+            if(mActionBar !=null){
+                //ustawienia Action Bara
+                mActionBar.subtitle = "Masz $total pomiarów"
+            }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?):Boolean{
+        menuInflater.inflate(R.menu.notemenu,menu)
+
+        //searchView
+        val sv:SearchView = menu!!.findItem(R.id.app_bar_search).actionView as SearchView
+        val sm = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        sv.setSearchableInfo(sm.getSearchableInfo(componentName))
+        sv.setOnQueryTextListener(object :SearchView.OnQueryTextListener{
+            //implementujemy dwie metody
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                LoadQuery("%$query%")
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                LoadQuery("%$newText%")
+                return false
+            }
+        })
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.dodaj_notatke-&gt;{
+                startActivity(Intent(this,AddNote::class.java))
+            }
+            R.id.sortuj-&gt;{
+                showSortDialog()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun showSortDialog() {
+        //lista opcji
+        val sortOption = arrayListOf("Najnowsze","starsze","Tytul rosnaco","Tytul malejaco")
+        val mBuilder = AlertDialog.Builder(this)
+        mBuilder.setTitle("Sort by")
+        mBuilder.setIcon(R.drawable.ic_sort)
+
+    }
+
+    //Implementation MojePomiaryAdapater
+    inner class MojePomiaryAdapter(context: Context, private var listaPomiarowAdapter: ArrayList&lt;Note&gt;) :
+        BaseAdapter() {
+        var context: Context?= context
+
+
+
+        //Generujemy secondary konstruktor
+
+        @SuppressLint("ViewHolder", "InflateParams")
+        override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+            //inflate layout row.xml
+            val myView = layoutInflater.inflate(R.layout.row,null)
+            val MojPomiar = listaPomiarowAdapter[position]
+            myView.StezenieTv.text = MojPomiar.nodeStezenie
+            myView.titleTv.text = MojPomiar.nodeName
+            myView.descTv.text = MojPomiar.nodeDes
+            //Przycisk kasowania
+            myView.deleteBtn.setOnClickListener{
+                val dbMenager = DbMenager(this.context!!)
+                val selectionArgs = arrayOf(MojPomiar.nodeID.toString())
+                dbMenager.delete("ID=?",selectionArgs)
+                LoadQuery("%")
+            }
+            //Przycisk edytowania
+            myView.editBtn.setOnClickListener{
+                GoToUpdateFun(MojPomiar)
+            }
+            //Przycisk kopiowania
+            myView.copyBtn.setOnClickListener{
+
+                //wez tytul
+                val title = myView.titleTv.text.toString()
+                //wez opis pomiaru badania
+                val desc = myView.descTv.text.toString()
+                val stezenie = myView.StezenieTv.text.toString()
+                //powiązanie
+                val s = title+"\n"+desc+"\n"+stezenie+"\n"
+                val cb = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                cb.text = s // dodawanie do clickboardu 54
+
+            }
+            //share
+            myView.shareBtn.setOnClickListener{
+                val title = myView.titleTv.text.toString()
+                //wez opis pomiaru badania
+                val desc = myView.descTv.text.toString()
+                //powiązanie
+                val s = title+"\n"+desc
+                //intencja share
+                val  shareIntent = Intent()
+                shareIntent.action = Intent.ACTION_SEND
+                shareIntent.type = "text"
+                shareIntent.putExtra(Intent.EXTRA_TEXT,s)
+                startActivity(Intent.createChooser(shareIntent,s))
+
+            }
+            return myView
+        }
+
+        override fun getItem(position: Int): Any {
+            return listaPomiarowAdapter[position]
+        }
+
+        override fun getItemId(position: Int): Long {
+            return position.toLong()
+        }
+
+        override fun getCount(): Int {
+            return listaPomiarowAdapter.size
+
+        }
+
+
+    }
+
+    private fun GoToUpdateFun(mojPomiar: Note) {
+        val intent = Intent(this,AddNote::class.java)
+        intent.putExtra("ID",mojPomiar.nodeID)//wpisz Id
+        intent.putExtra("Stezenie",mojPomiar.nodeStezenie)
+        intent.putExtra("name",mojPomiar.nodeName)//wpisz nazwe
+        intent.putExtra("des",mojPomiar.nodeDes)// wpisz opis
+        startActivity(intent)
+
+    }
+}
+</code></pre>
+<p>DBMENAGER   ----&gt; Here i have problem with last fucntion fun readData() ? ? </p>
+<pre><code>package com.example.apkadlapacjenta
+
+import android.content.ContentValues
+import android.content.Context
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
+import android.database.sqlite.SQLiteQueryBuilder
+import android.widget.Toast
+
+class DbMenager {
+
+    //database name
+    var dbName = "Wyniki Pomiarów"
+    //table name
+    var dbTable = "Pomiary"
+    //kolumny
+    var colID = "ID"
+    var colSt = "Stezenie"
+    var colTitle = "Title"
+    var colDes ="Description"
+    //database version
+    var dbVersion = 1
+
+    //Tworzymy tabele
+    val sqlCreateTable = "CREATE TABLE $dbTable($colID INTEGER PRIMARY KEY, $colSt TEXT, $colTitle TEXT, $colDes TEXT)"
+    var sqlDB:SQLiteDatabase?=null
+    constructor(context: Context){
+        var db = DatabseHelperPomiary(context)
+        sqlDB = db.writableDatabase
+    }
+    inner class DatabseHelperPomiary:SQLiteOpenHelper{
+        var context: Context?=null
+        constructor(context: Context):super(context,dbName,null,dbVersion){
+            this.context = context
+        }
+
+        override fun onCreate(db: SQLiteDatabase?) {
+            db!!.execSQL(sqlCreateTable)
+            Toast.makeText(this.context,"baza danych utworzona...",Toast.LENGTH_SHORT).show()
+
+        }
+
+        override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+            db!!.execSQL("zamknij tabele jeśli nie istnieje" + dbTable)
+
+        }
+
+    }
+
+    fun insert(values:ContentValues):Long{
+        val ID = sqlDB!!.insert(dbTable,"",values)
+        return ID
+
+    }
+
+    fun Query (projection:Array&lt;String&gt;,selection:String,selectionArgs:Array&lt;String&gt;,sorOrder:String):Cursor{
+
+        val qb = SQLiteQueryBuilder();
+        qb.tables=dbTable
+        val cursor = qb.query(sqlDB,projection,selection,selectionArgs,null,null,sorOrder)
+        return cursor
+    }
+
+    fun delete(selection: String,selectionArgs: Array&lt;String&gt;):Int{
+        val count = sqlDB!!.delete(dbTable,selection,selectionArgs)
+        return count
+    }
+
+    fun update(values:ContentValues,selection: String,selectionArgs: Array&lt;String&gt;): Int {
+        val count = sqlDB!!.update(dbTable,values,selection,selectionArgs)
+        return count
+    }
+
+
+    fun readData():Cursor
+    {
+        val db:DbMenager = this
+        val read:Cursor = db.("SELECT * FROM$dbTable",null)
+        return read
+    }
+</code></pre>
+<p>}</p>
+<p>ANALIZA ACTIVITY  ---&gt;  this is my purpose activity, on which I want to calculate averages in textview and finally I try to calculate functions that will provide me with "jedn7" this is the name of textview</p>
+<pre><code>package com.example.apkadlapacjenta
+
+import android.content.Intent
+import android.database.Cursor
+import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_analiza.*
+import java.lang.StringBuffer as StringBuffer1
+
+
+class Analiza : AppCompatActivity() {
+    lateinit var databaseHelper: DbMenager
+    lateinit var btn: Button
+    lateinit var jedn7:TextView
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_analiza)
+        setSupportActionBar(toolbar)
+
+        databaseHelper = DbMenager(this)
+        btn = findViewById(R.id.buttons)
+        jedn7 = findViewById(R.id.jedn7dni)
+        btn.setOnClickListener{
+            readDataFunction()
+        }
+
+
+
+
+
+
+
+        fabaddpomiar.setOnClickListener { view -&gt;
+            val intent = Intent(this,Wymienniki::class.java)
+            startActivity(intent)
+
+        }
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    private fun readDataFunction(){
+        val data = databaseHelper.readData()
+        val stringBuffer = StringBuffer1()
+        if(data!=null&amp;&amp;data.count&gt;0)
+        {
+            while(data.moveToNext())
+            {
+                stringBuffer.appened("STEZENIE:${data.getStrig(1)}\n")
+            }
+            jedn7.text = StringBuffer.toString()
+        }
+    }
+
+
+    }
+</code></pre>
+<p>For easier because the project is not in English. The Concentration column contains only a numerical value and from it I want to calculate the average, but first I want to make it appear in the textview field and then I will try to add them all and divide by their number. But all in small steps
+    The button will be as an update, after which clicking the values will be updated, although I will try to make them update themselves, but that's another topic not for now.
+Thx mates, </p>
+<p><a href="https://i.stack.imgur.com/G47c9.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/G47c9.png"/></a>
+<a href="https://i.stack.imgur.com/9rB7r.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/9rB7r.png"/></a>
+<a href="https://i.stack.imgur.com/XowG5.png" rel="nofollow noreferrer"><img alt="enter image description here" src="https://i.stack.imgur.com/XowG5.png"/></a></p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>7.  Android load libs from wrong location        
+          <a href="https://stackoverflow.com/questions/59861759/android-load-libs-from-wrong-location?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; android-studio; android-ndk; </a>
+            <a>Asked Time: 12 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I have 2 C shared libs liba.so and libb.so where jnis compiled within liba.so and dynamically linked with libb.so.
+while loading liba.so using:System.loadLibrary("a") android tried to link it with /my/local_machine/project/app/src/main//obj/local/arm64-v8a/libb.so</p>
+<pre><code>java.lang.UnsatisfiedLinkError: dlopen failed:
+library "/my/local_machine/project/app/src/main//obj/local/arm64-v8a/libb.so" not found.
+</code></pre>
+<p>instead of search at libs directory!
+I compiled liba using <strong>androidMK</strong> and normal <strong>cross compilation</strong> for libb</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>8.  Android 10 Incoming call notification like whats app when we are in another app        
+          <a href="https://stackoverflow.com/questions/59861734/android-10-incoming-call-notification-like-whats-app-when-we-are-in-another-app?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; </a>
+            <a>Asked Time: 13 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>Once we received FCM push notification message in android 10 background start activities restricted.need solution like whats app and Skype notification incoming call  when we are in another app.
+<a href="https://i.stack.imgur.com/YUNMJ.jpg" rel="nofollow noreferrer">enter image description here</a><a href="https://i.stack.imgur.com/lfTJ8.jpg" rel="nofollow noreferrer">enter image description here</a></p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>9.  GestureDetector not working for Android PdfViewer lib        
+          <a href="https://stackoverflow.com/questions/59861608/gesturedetector-not-working-for-android-pdfviewer-lib?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; pdf-viewer; </a>
+            <a>Asked Time: 21 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p><strong>GestureDetector</strong> working fine when i tap on empty activity screen but it's not working when I tap on Android pdfViewer(means pdf document)....Please help me how to do it.           </p>
+<pre><code>GestureDetector gestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener() {
+
+        @Override
+        public boolean onSingleTapUp(MotionEvent e) {
+            //------------------apply your logic here------------
+            return super.onSingleTapUp(e);
+        }
+
+        @Override
+        public boolean onSingleTapConfirmed(MotionEvent e) {
+            return super.onSingleTapConfirmed(e);
+        }
+    });      
+
+@Override
+public boolean onTouchEvent(MotionEvent event) {
+    gestureDetector.onTouchEvent(event);
+    return super.onTouchEvent(event);
+}
+</code></pre>
+<p>Document opened in Android PdfViewer</p>
+<pre><code>&lt;com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="200dp"
+        android:layout_height="200dp" /&gt;
+</code></pre>
+<p>when i click outside of opened doc GestureDetector working fine but when i click on pdf document GestureDetector not wrok.</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>10.  Android emulator does not start with Jenkins pipeline and android sdk        
+          <a href="https://stackoverflow.com/questions/59861582/android-emulator-does-not-start-with-jenkins-pipeline-and-android-sdk?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 0 </a>
+            <a>Tags: android; linux; android-studio; android-emulator; android-sdk-tools; </a>
+            <a>Asked Time: 23 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>we have the problem that on a Linux machine (Debian) the Android emulator does not start via Jenkins and local.</p>
+<p>Our procedure for the preparation:</p>
+<hr/>
+<pre><code>#!/bin/bash
+# Android Studio
+apt-get update
+apt-get -y install unzip
+apt-get -y install qt5-default
+apt-get install xvfb
+
+if [[ ! -f "sdk-tools-linux-4333796.zip" ]]; then
+    wget -q https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+fi
+unzip -o sdk-tools-linux-4333796.zip -d /usr/share/
+
+# Install platform tools
+/usr/share/tools/bin/sdkmanager --update
+echo yes | /usr/share/tools/bin/sdkmanager platform-tools
+echo yes | /usr/share/tools/bin/sdkmanager emulator
+
+ln -s /usr/share/platform-tools/adb /usr/local/bin/adb
+ln -s /usr/share/emulator/emulator-headless /usr/local/bin/emulator-headless
+ln -s /usr/share/emulator/emulator /usr/local/bin/emulator
+ln -s /usr/share/tools/android /usr/local/bin/android
+mkdir -p /usr/share/platforms
+
+# Create  emulator and accept licenses
+echo yes | /usr/share/tools/bin/sdkmanager "system-images;android-28;google_apis;x86"
+echo no | /usr/share/tools/bin/avdmanager create avd -n emulator-5554 -k "system-images;android-28;google_apis;x86" --force --path "$HOME/.android/avd"
+apt-get -y install libgl1
+
+if [[ ! -f "selenium-server-standalone-3.141.59.jar" ]]; then
+    wget -q https://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar
+fi
+
+# Appium
+set -x
+
+npm install -g appium --unsafe-perm=true --allow-root
+npm install -g wd --unsafe-perm=true --allow-root
+
+# Create node config for device
+mkdir -p nodeconfig
+cat &gt; nodeconfig/emulator-5554.json &lt;&lt; EOF
+{
+  "capabilities": [
+    {
+      "deviceName": "emulator-5554",
+      "browserName": "chrome",
+      "version": "9",
+      "maxInstances": 2,
+      "platform": "Android",
+      "platformName": "ANDROID"
+    }
+  ],
+  "configuration": {
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "maxSession": 5,
+    "port": $APPIUM_PORT,
+    "url": "http://127.0.0.1:$APPIUM_PORT",
+    "host": "127.0.0.1",
+    "register": true,
+    "registerCycle": 5000,
+    "hub": "http://$HUB_HOST:$HUB_PORT",
+    "hubPort": "$HUB_PORT",
+    "hubHost": "$HUB_HOST",
+    "nodeStatusCheckTimeout": 5000,
+    "nodePolling": 5000,
+    "role": "node",
+    "unregisterIfStillDownAfter": 60000,
+    "downPollingLimit": 2,
+    "debug": false,
+    "servlets": [],
+    "withoutServlets": []
+  }
+}
+EOF
+
+# Selenium
+screen -dmS selenium -L -Logfile selenium.log java -jar selenium-server-standalone-3.141.59.jar -port $HUB_PORT -role hub
+
+# Emulator
+screen -dmS emulator -L -Logfile emulator.log xvfb-run emulator -avd emulator-5554 "system-images;android-28;google_apis;x86"
+</code></pre>
+<hr/>
+<h1>Error messages</h1>
+<h2>I see this error message, when I add “-verbose”</h2>
+<pre><code>emulator: Android emulator version 29.3.4.0 (build_id 6110076) (CL:N/A)
+emulator: Found AVD name 'emulator-5554'
+emulator: Found AVD target architecture: x86_64
+emulator: argv[0]: 'emulator'; program directory: '/usr/share/emulator'
+emulator:  Found directory: /usr/share/system-images/android-28/google_apis/x86_64/
+
+emulator: emuDirName: '/usr/share/emulator'
+emulator: try dir /usr/share/emulator
+emulator: Trying emulator path '/usr/share/emulator/qemu/linux-x86_64/qemu-system-x86_64'
+emulator: Found target-specific 64-bit emulator binary: /usr/share/emulator/qemu/linux-x86_64/qemu-system-x86_64
+emulator: Adding library search path: '/usr/share/emulator/lib64'
+emulator: Adding library search path: '/usr/share/emulator/lib64/gles_angle'
+emulator: Adding library search path: '/usr/share/emulator/lib64/gles_angle9'
+emulator: Adding library search path: '/usr/share/emulator/lib64/gles_angle11'
+emulator: Adding library search path: '/usr/share/emulator/lib64/gles_swiftshader'
+emulator: Adding library search path: '/usr/share/emulator/lib64/libstdc++'
+emulator: Adding library search path for Qt: '/usr/share/emulator/lib64/qt/lib'
+emulator: Silencing all qWarning(); use qCWarning(...) instead: QT_LOGGING_RULES=default.warning=false
+emulator: Setting Qt plugin search path: QT_QPA_PLATFORM_PLUGIN_PATH=/usr/share/emulator/lib64/qt/plugins
+emulator: Setting Qt to use software OpenGL: QT_OPENGL=software
+emulator: Setting QML to use software QtQuick2D: QMLSCENE_DEVICE=softwarecontext
+emulator: Overriding pre-existing bad Qt high dpi settings...
+emulator: Setting LD_PRELOAD to /usr/share/emulator/lib64/qt/lib/libfreetype.so.6
+emulator: Running :/usr/share/emulator/qemu/linux-x86_64/qemu-system-x86_64
+emulator: qemu backend: argv[00] = "/usr/share/emulator/qemu/linux-x86_64/qemu-system-x86_64"
+emulator: qemu backend: argv[01] = "-avd"
+emulator: qemu backend: argv[02] = "emulator-5554"
+emulator: qemu backend: argv[03] = "-gpu"
+emulator: qemu backend: argv[04] = "swiftshader_indirect"
+emulator: qemu backend: argv[05] = "-verbose"
+emulator: Concatenated backend parameters:
+ /usr/share/emulator/qemu/linux-x86_64/qemu-system-x86_64 -avd emulator-5554 -gpu swiftshader_indirect -verbose
+emulator: autoconfig: -skin HVGA
+emulator: autoconfig: -skindir (null)
+emulator: autoconfig: -kernel /usr/share/system-images/android-28/google_apis/x86_64//kernel-ranchu
+emulator: Target arch = 'x86_64'
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /usr/share/system-images/android-28/google_apis/x86_64//ramdisk.img
+emulator: Using initial system image: /usr/share/system-images/android-28/google_apis/x86_64//system.img
+emulator: Using initial vendor image: /usr/share/system-images/android-28/google_apis/x86_64//vendor.img
+emulator: autoconfig: -data /root/.android/avd/userdata-qemu.img
+emulator: autoconfig: -initdata /root/.android/avd/userdata.img
+emulator: autoconfig: -cache /root/.android/avd/cache.img
+emulator: Increasing RAM size to 1536MB
+emulator: VM heap size 0MB is below hardware specified minimum of 384MB,setting it to that value
+emulator: System image is read only
+emulator: skin name 'HVGA' aliased to '320x480'
+emulator: found magic skin width=320 height=480 bpp=16
+
+emulator: VERBOSE: System.cpp:2342: statvfs('/root/.android/avd/snapshots/default_boot/ram.img') failed: No such file or directory
+
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=v:* androidboot.consolepipe=qemu_pipe,pipe:logcat'
+emulator: Adding boot property: 'qemu.logcat' = 'start'
+emulator: CPU Acceleration: working
+emulator: CPU Acceleration status: KVM (version 12) is installed and usable.
+Segmentation fault
+</code></pre>
+<h2>Without “-verbose” I just see the error message:</h2>
+<pre><code>Segmentation fault
+</code></pre>
+<h2>I also tried to run the emulator without “xvfb-run” but then I see this error message:</h2>
+<pre><code>emulator: INFO: QtLogger.cpp:68: Warning: QXcbConnection: Could not connect to display  ((null):0, (null))
+
+
+emulator: INFO: QtLogger.cpp:68: Critical: Could not connect to any X display. ((null):0, (null))
+</code></pre>
+</div></blockquote><br/><hr/><br/><br/>
+      </details><br/>
+      <h1>The 10 most voted Android-related questions posted in the past week in Stack Overflow.</h1>
+      <details>
+        <summary>1.  What is the proper replacement for ViewModelProviders deprecation?        
+          <a href="https://stackoverflow.com/questions/59810645/what-is-the-proper-replacement-for-viewmodelproviders-deprecation?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 1 </a>
+            <a>Votes: 5 </a>
+            <a>Tags: java; android; android-fragments; </a>
+            <a>Asked Time: Jan 19</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I switched from using ViewModelProviders.of(this) due to said being depreciated.  I researched other questions and used code from the responses.  All of the code came through  without errors, but when I try to run the application, I get an exception.  </p>
+<p>Error occurring here.  </p>
+<pre><code>Process: com.example.checkingin, PID: 555
+    java.lang.RuntimeException: Cannot create an instance of class com.example.checkingin.MainViewModel
+        at androidx.lifecycle.ViewModelProvider$AndroidViewModelFactory.create(ViewModelProvider.java:275)
+        at androidx.lifecycle.SavedStateViewModelFactory.create(SavedStateViewModelFactory.java:106)
+        at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.java:185)
+        at androidx.lifecycle.ViewModelProvider.get(ViewModelProvider.java:150)
+        at com.example.checkingin.CheckInRecentList.onActivityCreated(CheckInRecentList.java:123)
+</code></pre>
+<p><strong>CheckInRecentList</strong></p>
+<pre><code>package com.example.checkingin;
+import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import java.util.List;
+
+/**
+ * A simple {@link Fragment} subclass.
+ * Activities that contain this fragment must implement the
+ * {@link CheckInRecentList.OnFragmentInteractionListener} interface
+ * to handle interaction events.
+ * Use the {@link CheckInRecentList#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class CheckInRecentList extends Fragment {
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter checkInListAdapter;
+    //private RecyclerView.LayoutManager layoutManager;
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+    private MainViewModel mViewModel;
+    private CheckInListAdapter adapter;
+    private TextView checkInLastDateTime;
+    private TextView checkInTitle;
+    private TextView checkInDestinationName;
+    private TextView checkInComments;
+
+    private OnFragmentInteractionListener mListener;
+
+    public CheckInRecentList() {
+        // Required empty public constructor
+    }
+
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment CheckInRecentList.
+     */
+    // TODO: Rename and change types and number of parameters
+    public static CheckInRecentList newInstance(String param1, String param2) {
+        CheckInRecentList fragment = new CheckInRecentList();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    //      These were originally set up from the recycler view add to the fragment
+    //          recyclerView = findViewById(R.id.check_in_recent_recycler_view);
+
+                // use this setting to improve performance if you know that changes
+                // in content do not change the layout size of the RecyclerView
+                //recyclerView.setHasFixedSize(true);
+/*
+                // use a linear layout manager
+                layoutManager = new LinearLayoutManager(this);
+                recyclerView.setLayoutManager(layoutManager);
+*/
+                // specify an adapter (see also next example)
+                //checkInListAdapter = new CheckInListAdapter();
+     //           recyclerView.setAdapter(checkInListAdapter);
+            }
+
+   @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_check_in_recent_list, container, false);
+    }
+
+    // TODO: Rename method, update argument and hook method into UI event
+    public void onButtonPressed(Uri uri) {
+        if (mListener != null) {
+            mListener.onFragmentInteraction(uri);
+        }
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnFragmentInteractionListener");
+        }
+    }
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mViewModel = new ViewModelProvider(this).get(MainViewModel.class);**
+
+        checkInLastDateTime = getView().findViewById(R.id.checkInLastDateTime);
+        checkInTitle = getView().findViewById(R.id.checkInTitle);
+        checkInDestinationName = getView().findViewById(R.id.checkInDestinationName);
+        checkInComments = getView().findViewById(R.id.checkInComments);
+
+        listenerSetup();
+        observerSetup();
+        recyclerSetup();
+    }
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+    }
+
+    /**
+     * This interface must be implemented by activities that contain this
+     * fragment to allow an interaction in this fragment to be communicated
+     * to the activity and potentially other fragments contained in that
+     * activity.
+     * &lt;p&gt;
+     * See the Android Training lesson &lt;a href=
+     * "http://developer.android.com/training/basics/fragments/communicating.html"
+     * &gt;Communicating with Other Fragments&lt;/a&gt; for more information.
+     */
+    public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
+        void onFragmentInteraction(Uri uri);
+    }
+    private void clearFields() {
+        checkInLastDateTime.setText("");
+        checkInDestinationName.setText("");
+        checkInTitle.setText("");
+        checkInComments.setText("");
+    }
+
+    private void listenerSetup() {
+
+        Button editCheckInButton = getView().findViewById(R.id.checkInEditButton);
+        Button resendCheckInButton = getView().findViewById(R.id.checkInResendButton);
+
+        editCheckInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+        //put in edit check in logic
+            }
+        });
+        resendCheckInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+        //put in resend logic
+            }
+        });
+
+        }
+
+    private void observerSetup() {
+
+        mViewModel.getAllCheckIn().observe(getViewLifecycleOwner(), new Observer&lt;List&lt;CheckInTable&gt;&gt; ()
+{
+            @Override
+            public void onChanged(@Nullable final List&lt;CheckInTable&gt; checkIn) {
+                adapter.setCheckInList(checkIn);
+            }
+        });
+
+        mViewModel.getSearchCheckInResults().observe(getViewLifecycleOwner(), new Observer&lt;List&lt;CheckInTable&gt;&gt;() {
+            @Override
+            public void onChanged(@Nullable final List&lt;CheckInTable&gt; checkIn) {
+
+                        if (checkIn.size() &gt; 0) {
+
+                            checkInLastDateTime.setText(checkIn.get(0).getCheckInLastDateTime());
+                            checkInDestinationName.setText(checkIn.get(0).getCheckInDestinationName());
+                            checkInTitle.setText(checkIn.get(0).getCheckInTitle());
+                            checkInComments.setText(checkIn.get(0).getCheckInComments());
+                        } else {
+                            checkInLastDateTime.setText("None Found");
+                        }
+                    }
+                });
+    }
+    private void recyclerSetup() {
+
+        RecyclerView recyclerView;
+
+        adapter = new CheckInListAdapter(R.layout.recycler_view_item);
+        recyclerView = getView().findViewById(R.id.check_in_recent_recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(adapter);
+    }
+}
+
+</code></pre>
+<p><strong>MainViewModel</strong></p>
+<pre><code>package com.example.checkingin;
+import android.app.Application;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import java.util.List;
+
+public class MainViewModel extends AndroidViewModel {
+
+    private CheckInRecipientsTableRepository checkInRecipientsTableRepository;
+    private LiveData&lt;List&lt;CheckInRecipientsTable&gt;&gt; allRecipients;
+    private MutableLiveData&lt;List&lt;CheckInRecipientsTable&gt;&gt; searchRecipientResults;
+
+    private ContactGroupsTableRepository contactGroupsTableRepository;
+    private LiveData&lt;List&lt;ContactGroupsTable&gt;&gt; allContactGroups;
+    private MutableLiveData&lt;List&lt;ContactGroupsTable&gt;&gt; searchContactGroupsResults;
+
+    private CheckInTableRepository checkInTableRepository;
+    private LiveData&lt;List&lt;CheckInTable&gt;&gt; allCheckIn;
+    private MutableLiveData&lt;List&lt;CheckInTable&gt;&gt; searchCheckInResults;
+
+    public MainViewModel (Application application) {
+        super(application);
+
+        checkInRecipientsTableRepository = new CheckInRecipientsTableRepository(application);
+        allRecipients = checkInRecipientsTableRepository.getAllCheckInRecipients();
+        searchRecipientResults = checkInRecipientsTableRepository.getSearchRecipientResults();
+
+        checkInTableRepository = new CheckInTableRepository(application);
+        allCheckIn = checkInTableRepository.getAllCheckIn();
+        searchCheckInResults = checkInTableRepository.getSearchCheckInResults();
+
+        contactGroupsTableRepository = new ContactGroupsTableRepository(application);
+        allContactGroups = contactGroupsTableRepository.getAllContactGroups();
+        searchContactGroupsResults = contactGroupsTableRepository.getSearchContactGroupsResults();
+    }
+
+
+    MutableLiveData&lt;List&lt;CheckInRecipientsTable&gt;&gt; getSearchRecipientResults() {
+        return getSearchRecipientResults();
+    }
+    LiveData&lt;List&lt;CheckInRecipientsTable&gt;&gt; getAllCheckInRecipients() {
+        return getAllCheckInRecipients();
+    }
+
+    public void insertCheckInRecipientsTable(CheckInRecipientsTable checkInRecipientsTable) {
+        checkInRecipientsTableRepository.insertCheckInRecipientsTable(checkInRecipientsTable);
+    }
+    public void deleteCheckInRecipient(int checkInPrimaryKey) {
+        checkInRecipientsTableRepository.deleteCheckInRecipient(checkInPrimaryKey);
+    }
+    public void findCheckInRecipient(int checkInPrimaryKey) {
+        checkInRecipientsTableRepository.findCheckInRecipient(checkInPrimaryKey);
+    }
+
+
+    MutableLiveData&lt;List&lt;ContactGroupsTable&gt;&gt; getSearchContactGroupsResults() {
+        return getSearchContactGroupsResults();
+    }
+    LiveData&lt;List&lt;ContactGroupsTable&gt;&gt; getAllContactGroups() {
+        return getAllContactGroups();
+    }
+
+    public void insertContactGroupsTable(ContactGroupsTable contactGroupsTable) {
+        contactGroupsTableRepository.insertContactGroups(contactGroupsTable);
+    }
+    public void deleteContactGroups(int contactGroupsTablePrimaryKey) {
+        contactGroupsTableRepository.deleteContactGroups(contactGroupsTablePrimaryKey);
+    }
+    public void findContactGroups(int contactGroupsTablePrimaryKey) {
+        contactGroupsTableRepository.findContactGroups(contactGroupsTablePrimaryKey);
+    }
+
+    MutableLiveData&lt;List&lt;CheckInTable&gt;&gt; getSearchCheckInResults() {
+        return getSearchCheckInResults();
+    }
+    LiveData&lt;List&lt;CheckInTable&gt;&gt; getAllCheckIn() {
+        return getAllCheckIn();
+    }
+
+    public void insertCheckInTable(CheckInTable checkInTable) {
+        checkInTableRepository.insertCheckIn(checkInTable);
+    }
+    public void deleteCheckIn(int checkInTablePrimaryKey) {
+        checkInTableRepository.deleteCheckIn(checkInTablePrimaryKey);
+    }
+    public void findCheckIn(int checkInTablePrimaryKey) {
+        checkInTableRepository.findCheckIn(checkInTablePrimaryKey);
+    }
+}
+</code></pre>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>2.  Firebase Messaging Service Not Working On Older Android        
+          <a href="https://stackoverflow.com/questions/59808320/firebase-messaging-service-not-working-on-older-android?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 1 </a>
+            <a>Votes: 4 </a>
+            <a>Tags: java; android; </a>
+            <a>Asked Time: Jan 19</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>Recently I`ve migrated GCM to FCM and after some struggle, I've managed to make everything work with the help of this great community.</p>
+<p>Now when I tested notifications on older version of Android ( Nougat) it doesn't work, app just crash, I've found out that its something related to versions as older ones doesn't support channel managers.</p>
+<p>I've found few solutions on StackOverflow but I haven't find a suitable one for my problem so I was hoping someone could toss me a hint or solution.</p>
+<p>I appreciate all the answers and help.</p>
+<pre><code>public class MessagingService extends FirebaseMessagingService {
+
+private static final String TAG = "FCM Message";
+
+public MessagingService() {
+    super();
+}
+
+
+
+@TargetApi(Build.VERSION_CODES.O)
+@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+@Override
+public void onMessageReceived(RemoteMessage remoteMessage) {
+    super.onMessageReceived(remoteMessage);
+
+    String message = remoteMessage.getData().get("team");
+
+
+
+    Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+    String CHANNEL_ID="channel";
+    Uri defaultSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+    NotificationChannel notificationChannel=new NotificationChannel(CHANNEL_ID,"channel",NotificationManager.IMPORTANCE_HIGH);
+    PendingIntent pendingIntent=PendingIntent.getActivity(getApplicationContext(),1,intent,0);
+    Notification notification=new Notification.Builder(getApplicationContext(),CHANNEL_ID)
+            .setContentText(message)
+            //  .setContentTitle(title)
+            .setSound(defaultSound)
+            .setContentIntent(pendingIntent)
+            .setChannelId(CHANNEL_ID)
+            .setSmallIcon(android.R.drawable.sym_action_chat)
+            .setWhen(System.currentTimeMillis())
+            .setPriority(Notification.PRIORITY_MAX)
+            .build();
+
+    NotificationManager notificationManager=(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+    notificationManager.createNotificationChannel(notificationChannel);
+    notificationManager.notify(1,notification);
+}
+</code></pre>
+<p>}</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>3.  Prevent Android App from getting installed on multiple users        
+          <a href="https://stackoverflow.com/questions/59768633/prevent-android-app-from-getting-installed-on-multiple-users?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 1 </a>
+            <a>Votes: 4 </a>
+            <a>Tags: android; android-install-apk; android-multiple-users; </a>
+            <a>Asked Time: Jan 16</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>Strangely there is no question on SO regarding this matter. At least I couldn't find one.</p>
+<p>When I run my app from Android Studio and install it on the primary user on a device, I notice that it gets installed on the secondary user as well.</p>
+<p>In the first place, why is this happening? The <a href="https://developer.android.com/reference/android/R.attr.html#requiredForAllUsers" rel="nofollow noreferrer"><code>android:requiredForAllUsers</code></a> flag is <code>false</code> by default, and in any case can only be used by system apps or pre-installed apps.</p>
+<p>Or is it the case that this happens only for debug-mode apps installed via Android Studio?</p>
+<blockquote>
+<p><strong>How can I prevent this from happening?</strong></p>
+</blockquote>
+<p>It is critical for my app that it be installed on one user only. I have already read the following documents:</p>
+<p><a href="https://source.android.com/devices/tech/admin/multi-user" rel="nofollow noreferrer">Supporting Multiple Users</a></p>
+<p><a href="https://developer.android.com/work/dpc/dedicated-devices/multiple-users" rel="nofollow noreferrer">Manage multiple users</a></p>
+<p>Neither of those documents has any explanation of whether and how the installation process is affected by the multi-user feature.</p>
+<p>There must surely be some manifest or build setting that permits or prevents installation on multiple users. Why isn't it easier to find? And why isn't this question more common on SO?</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>4.  Fragments not added to backstack using Navigation Components        
+          <a href="https://stackoverflow.com/questions/59775946/fragments-not-added-to-backstack-using-navigation-components?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 4 </a>
+            <a>Tags: android; android-fragments; android-navigation; android-architecture-navigation; android-navigation-graph; </a>
+            <a>Asked Time: Jan 16</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<h2>Information:</h2>
+<p>I'm programmatically inserting a <code>NavHostFragment</code> for each feature of the app. Each <code>NavHostFragment</code> has it's own Navigation Graph. Dagger is providing them by using a <code>FragmentFactory</code> specific to each feature. It's a <strong>Single Activity</strong> structure with MVVM architecture.</p>
+<p>Repo: <a href="https://github.com/mitchtabian/DaggerMultiFeature/tree/nav-component-backstack-bug" rel="nofollow noreferrer">https://github.com/mitchtabian/DaggerMultiFeature/tree/nav-component-backstack-bug</a></p>
+<p><strong>checkout the branch "nav-component-backstack-bug".</strong></p>
+<hr/>
+<h2>The Problem</h2>
+<p>When navigating into the graph the fragments are not being added to the backstack. The only fragment that's added is whichever one has most recently been visited. <strong>So the stack size always stays at one.</strong></p>
+<p>Originally I thought it was because I wasn't setting the <code>FragmentFactory</code> to the <code>ChildFragmentManager</code> but that doesn't change anything. See the code snippets below for the relevant code. Or checkout the project and run it. I have logs printing out the fragments currently in the backstack from the <code>ChildFragmentManager</code> and also the <code>SupportFragmentManager</code>. Both have a constant size of 1.</p>
+<hr/>
+<p><strong>Feature1NavHostFragment.kt</strong></p>
+<p>This is one of the custom <code>NavHostFragment</code>'s. The <code>create()</code> function in the companion object is how I create them.</p>
+<pre class="lang-java prettyprint-override"><code>
+class Feature1NavHostFragment
+@Inject
+constructor(
+    private val feature1FragmentFactory: Feature1FragmentFactory
+): NavHostFragment(){
+
+    override fun onAttach(context: Context) {
+        ((activity?.application) as BaseApplication)
+            .getAppComponent()
+            .feature1Component()
+            .create()
+            .inject(this)
+        childFragmentManager.fragmentFactory = feature1FragmentFactory
+        super.onAttach(context)
+    }
+
+    companion object{
+
+        const val KEY_GRAPH_ID = "android-support-nav:fragment:graphId"
+
+        @JvmStatic
+        fun create(
+            feature1FragmentFactory: Feature1FragmentFactory,
+            @NavigationRes graphId: Int = 0
+        ): Feature1NavHostFragment{
+            var bundle: Bundle? = null
+            if(graphId != 0){
+                bundle = Bundle()
+                bundle.putInt(KEY_GRAPH_ID, graphId)
+            }
+            val result = Feature1NavHostFragment(feature1FragmentFactory)
+            if(bundle != null){
+                result.arguments = bundle
+            }
+            return result
+        }
+    }
+
+}
+</code></pre>
+<hr/>
+<p><strong>MainActivity.kt</strong></p>
+<p>This is an example of how I create the <code>NavHostFragment</code>'s in MainActivity.</p>
+<pre class="lang-java prettyprint-override"><code>
+val newNavHostFragment = Feature1NavHostFragment.create(
+                                  getFeature1FragmentFactory(),
+                                  graphId
+                         )
+supportFragmentManager.beginTransaction()
+    .replace(
+        R.id.main_nav_host_container,
+        newNavHostFragment,
+        getString(R.string.NavHostFragmentTag)
+    )
+    .setPrimaryNavigationFragment(newNavHostFragment)
+    .commit()
+
+</code></pre>
+<hr/>
+<p><strong>Feature1MainFragment.kt</strong></p>
+<p>And here is an example of how I'm navigating to other fragments in the graph.</p>
+<pre class="lang-java prettyprint-override"><code>
+btn_go_next.setOnClickListener {
+    findNavController().navigate(R.id.action_feature1MainFragment_to_feature1NextFragment)
+}
+
+</code></pre>
+<hr/>
+<h1>Summary</h1>
+<p>Like I said, in every fragment I'm printing the backstack for both the <code>ChildFragmentManager</code> and the <code>SupportFragmentManager</code>. Both have a constant size of one. It's as if the fragments are being replaced as I navigate into the graph instead of added to the stack. </p>
+<p>Anyways, thanks for reading this and I would appreciate any insights.</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>5.  Android Intent Bundle passing returns always null        
+          <a href="https://stackoverflow.com/questions/59799477/android-intent-bundle-passing-returns-always-null?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 3 </a>
+            <a>Votes: 3 </a>
+            <a>Tags: java; android; string; list; bundle; </a>
+            <a>Asked Time: Jan 18</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I am trying to pass text from a custom dialog to the home activity. The bundle always comes up as null instead of the value I'm trying to pass and I can't figure out why. I've tried looking at similar questions but I have yet to find a solution.</p>
+<p>Dialog</p>
+<pre><code>@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_add_ingredients_dialog);
+
+    Button addButton = findViewById(R.id.addButton);
+    addButton.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ArrayAdapter&lt;String&gt; arrayAdapter = new ArrayAdapter&lt;&gt;(AddIngredientsDialog.this,
+                            android.R.layout.select_dialog_item, fruits);
+                    editText.setAdapter(arrayAdapter);
+                    text = editText.getText().toString();
+
+                    Intent intent = new Intent(AddIngredientsDialog.this, AddIngredientsActivity.class);
+                    intent.putExtra("Text", text);
+                    startActivity(intent);
+                    dialog.dismiss();
+            }
+
+     });
+}
+</code></pre>
+<p>Home Activity</p>
+<pre><code> ingredientList = findViewById(R.id.listView);
+ ArrayList&lt;String&gt; ingredients = new ArrayList&lt;&gt;();
+ @Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_add_ingredients);
+
+    //bundle
+    Bundle extras = getIntent().getExtras();
+    text = extras.getString("Text");
+
+    button = findViewById(R.id.add);
+    button.setOnClickListener(new View.OnClickListener() {
+
+        @Override
+        public void onClick(View arg0) {
+            ingredients.add(text);
+            adapter = new ArrayAdapter&lt;&gt;(AddIngredientsActivity.this, android.R.layout.simple_list_item_1, ingredients);
+            ingredientList.setAdapter(adapter);
+            adapter.notifyDataSetChanged();
+        }
+    });
+}
+</code></pre>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>6.  Why do I need to add Material Theme dependency in order to resolve DocumentFile        
+          <a href="https://stackoverflow.com/questions/59861038/why-do-i-need-to-add-material-theme-dependency-in-order-to-resolve-documentfile?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 1 </a>
+            <a>Votes: 3 </a>
+            <a>Tags: java; android; </a>
+            <a>Asked Time: 51 mins ago</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I needed to access the <strong>DocumentFile</strong>  class in my Android Studio project. I had a hell of a time getting it to resolve.</p>
+<p>The Andriod Developers Documentation said that I needed to import <strong>"androidx.documentfile.provider.DocumentFile"</strong>, but when I added the import, I was told that it couldn't resolve that import. It didn't like the '.documentfile.' portion.</p>
+<p>After much hair pulling and gnashing of teeth, I stumbled on to the fact that I needed to add an implementation dependency on  <strong>"com.google.android.material:material:1.0.0"</strong>. Once I added that to my build file, the include resolved and I had access to the DocumentFile class.</p>
+<p>Why is this? Where is the documentation that states I needed to do this? Or, should I have done something different to get DocumentFile to resolve?</p>
+<p>Any insight on this would be greatly appreciated.</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>7.  How do i add an email address for a user who is authenticated using phone authentiation        
+          <a href="https://stackoverflow.com/questions/59809588/how-do-i-add-an-email-address-for-a-user-who-is-authenticated-using-phone-authen?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 4 </a>
+            <a>Votes: 3 </a>
+            <a>Tags: android; firebase; firebase-authentication; </a>
+            <a>Asked Time: Jan 19</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>i would like to add an email address for a user who chose phone authentication and add a phone number for a user who is authenticated using email or google sign-in.</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>8.  The Number of Stars in the RatingBar Looks Wrong        
+          <a href="https://stackoverflow.com/questions/59841900/the-number-of-stars-in-the-ratingbar-looks-wrong?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 1 </a>
+            <a>Votes: 3 </a>
+            <a>Tags: java; android; ratingbar; </a>
+            <a>Asked Time: yesterday</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>The number of stars in the RatingBar seems to be more than I have set. Although I set it to 5, more stars appear on the screen. The screen shots are below. However, the normal number appears when choosing the stars.</p>
+<p><strong>My empty RatingBar's stars count are not coming true. Empty ratingbar is not showing, android default RatingBar is shown. When my RatingBar is filling, both of my filled RatingBar and android default RatingBar is showing.</strong></p>
+<p><a href="https://i.stack.imgur.com/U0jlv.png" rel="nofollow noreferrer"><img alt="First Photo" src="https://i.stack.imgur.com/U0jlv.png"/></a></p>
+<p><a href="https://i.stack.imgur.com/9zT9z.png" rel="nofollow noreferrer"><img alt="Second Photo" src="https://i.stack.imgur.com/9zT9z.png"/></a></p>
+<p>My code is as follows:</p>
+<pre><code>&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"&gt;
+
+&lt;LinearLayout
+    android:id="@+id/header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="20dp"&gt;
+
+    &lt;TextView
+        android:id="@+id/ratingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/callRatingBar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/topTitle" /&gt;
+
+&lt;/LinearLayout&gt;
+
+&lt;RatingBar
+    android:id="@+id/ratingBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:isIndicator="false"
+    android:numStars="5"
+    android:progressBackgroundTint="@color/transparent_black_30"
+    android:stepSize="1"
+    android:theme="@style/"
+    tools:rating="1" /&gt;
+
+&lt;TextView
+    android:id="@+id/limit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|center_horizontal"
+    android:contentDescription="@null"
+    android:gravity="end|center_horizontal"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:text="200"
+    android:textColor="@color/grey"
+    android:textSize="@dimen/infoTitle" /&gt;
+
+&lt;com.project.android.util.view.CustomEditText
+    android:id="@+id/commentText"
+    style="@style/EditTextStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:fadeScrollbars="true"
+    android:fastScrollAlwaysVisible="false"
+    android:fastScrollEnabled="true"
+    android:gravity="start"
+    android:hint="@string/leaveAComment"
+    android:maxLength="200"
+    android:minHeight="40dp"
+    android:nextFocusRight="@+id/textSendButton"
+    android:nextFocusForward="@+id/textSendButton"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbVertical="@drawable/edittext_scrollbar"
+    android:scrollbars="vertical"
+    android:scrollingCache="false"
+    android:scrollHorizontally="false"
+    android:smoothScrollbar="true"
+    android:textSize="@dimen/infoTitle"
+    app:emojiSize="@dimen/conversation_emojiSize" /&gt;
+</code></pre>
+<p></p>
+<p>MyRatingBar style:</p>
+<pre><code> &lt;style name="MyRatingBar" parent="Theme.AppCompat"&gt;
+        &lt;item name="colorControlNormal"&gt;@color/lightTransparentBlack&lt;/item&gt;
+        &lt;item name="colorControlActivated"&gt;@color/pin_yellow&lt;/item&gt;
+        &lt;item name="android:numStars"&gt;5&lt;/item&gt;
+    &lt;/style&gt;
+</code></pre>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>9.  TableView is not showing row headers properly        
+          <a href="https://stackoverflow.com/questions/59750904/tableview-is-not-showing-row-headers-properly?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 0 </a>
+            <a>Votes: 3 </a>
+            <a>Tags: android; tableview; </a>
+            <a>Asked Time: Jan 15</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>I have used this <a href="https://github.com/evrencoskun/TableView" rel="nofollow noreferrer">tableview</a> in my android app. The problem i have is, the table doesn't show row headers properly. This is the table:</p>
+<p><a href="https://i.stack.imgur.com/dnbb2.png" rel="nofollow noreferrer"><img alt="Table" src="https://i.stack.imgur.com/dnbb2.png"/></a> </p>
+<p>There are <code>5 rows</code> and i have added <code>5 RowHeader</code> items, but the <code>first item</code> is expanded to all <code>row headers</code>.</p>
+<p>This is the code of initializing row headers:</p>
+<pre><code>// set row header
+List&lt;RowHeader&gt; rowHeaders = new ArrayList&lt;&gt;();
+for (PersianDate day : dataset.keySet())
+    rowHeaders.add(new RowHeader(Integer.toString(day.getDayOfMonth())));
+
+mTableAdapter.setRowHeaderItems(rowHeaders);
+</code></pre>
+<p>in the adapter:</p>
+<pre><code>@Override
+public void onBindRowHeaderViewHolder(@NonNull AbstractViewHolder holder, @Nullable RowHeader rowHeaderItemModel, int rowPosition) {
+    RowHeader rowHeader = rowHeaderItemModel;
+
+    // Get the holder to update row header item text
+    MyRowHeaderViewHolder rowHeaderViewHolder = (MyRowHeaderViewHolder) holder;
+    rowHeaderViewHolder.cell_textview.setText(rowHeader.getData());
+
+    // It is necessary to remeasure itself.
+    rowHeaderViewHolder.cell_textview.getLayoutParams().width = LinearLayout.LayoutParams.WRAP_CONTENT;
+    rowHeaderViewHolder.cell_textview.requestLayout();
+}
+</code></pre>
+<p>Do you know what is the problem?</p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details>
+      <details>
+        <summary>10.  Android 10 - Using PackageManager to install new version of apk instead of Intents doesn't r…        
+          <a href="https://stackoverflow.com/questions/59784661/android-10-using-packagemanager-to-install-new-version-of-apk-instead-of-inten?r=SearchResults">Links</a>
+          <p>
+            <a>Answers: 2 </a>
+            <a>Votes: 3 </a>
+            <a>Tags: java; android; android-intent; android-10.0; </a>
+            <a>Asked Time: Jan 17</a>
+          </p>
+        </summary>
+        <blockquote><div class="post-text" itemprop="text">
+<p>The way my apk updates currently is through the new apk installing itself over the old one(while not overwriting the local database or settings).</p>
+<p>So since Android 10(API 29) <code>ACTION_VIEW</code> was deprecated so this doesn't really work anymore:</p>
+<pre><code>Intent intent = new Intent(Intent.ACTION_VIEW);
+//output file is the apk downloaded earlier
+intent.setDataAndType(Uri.fromFile(outputFile), "application/vnd.android.package-archive");
+startActivity(intent);
+</code></pre>
+<p>Following different answers I've found over the internet I need to start using PackageInstaller instead. Looking at the demo found in the Android docs I get to this:</p>
+<pre><code>Intent intent = new Intent(PSMentorActivity.this,InstallApkSessionApi.class);
+intent.putExtra("apkFile",outputFile);
+this.startActivity(intent);
+</code></pre>
+<p>Where InstallApkSessionApi contains a button that when pressed should start the install window:</p>
+<pre><code>PackageInstaller packageInstaller = getPackageManager().getPackageInstaller();
+PackageInstaller.SessionParams params = new 
+    PackageInstaller.SessionParams(PackageInstaller.SessionParams.MODE_FULL_INSTALL);
+int sessionId = packageInstaller.createSession(params);
+session = packageInstaller.openSession(sessionId);
+addApkToInstallSession(file, session);
+// Create an install status receiver.
+Context context = InstallApkSessionApi.this;
+Intent intent = new Intent(context, InstallApkSessionApi.class);
+intent.setAction(PACKAGE_INSTALLED_ACTION);
+PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+IntentSender statusReceiver = pendingIntent.getIntentSender();
+// Commit the session (this will start the installation workflow).
+session.commit(statusReceiver);
+</code></pre>
+<p>Simple enough, albeit more complicated compared to the past. The response I get in onNewIntent is always:</p>
+<pre><code> case PackageInstaller.STATUS_FAILURE:
+              Toast.makeText(this, "Install failed!10 " + status + ", " + message,
+                            Toast.LENGTH_SHORT).show();
+              break;
+</code></pre>
+<p>where the status and message take the following values: <code>status=1, message= "INSTALL_FAILED_INTERNAL_ERROR: Permission denied"</code>.</p>
+<p>So I assumed it was a problem with permissions. I already had permissions in place over reading and writing to storage. Other related permissions are: <code>INSTALL_PACKAGES</code> and <code>REQUEST_INSTALL_PACKAGES</code> which I cannot use due to the first not being intended for third party uses and the latter being signature level.</p>
+<p>Is there something I am terribly missing or is there not a way for me to update my Apk without going through google play? </p>
+</div></blockquote><br/><hr/><br/><br/>
+      </details><br/>
+    </div>
+  </body>
+</html>
