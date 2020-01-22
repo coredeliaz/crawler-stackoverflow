@@ -137,5 +137,7 @@ def fun_RunCrawler():
     #Release the html.
     with open('./static/index.html','w',encoding='utf-8') as f:
         f.write(h.render())
+    
+    print('Finished!')
         
         
